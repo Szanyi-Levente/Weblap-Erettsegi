@@ -27,6 +27,49 @@
             </ul>
           </div>
         </div>
-      </nav>     
+      </nav>
+
+      <div class="container">
+        <h1>Középszintű informatika érettségi - Pontozólap</h1>
+        <h1>Középszintű informatika érettségi - Pontozólap</h1>
+        <br>
+          <div class="col-md-5 lap">
+          <form id="pontozo" name="pontozo">
+            <b><p id="szo"> Írásbeli</p></b>
+            <p class="i">Hálózat: 40 pont</p> <input type="text" id="halozati" name="halozati">
+            <p class="i">Programozás: 40 pont</p> <input type="text" id="programozasi" name="programozasi" >
+            <p class="i">Weblap és Adatbázis: 40 pont</p> <input type="text" id="weblapi" name="weblapi">
+            <br><br>
+            <p>Összesen: 120 pont</p>
+            <br><br>
+            <b><p id="ir"> Szóbeli</p></b>
+            <input type="text" id="szobeli" name="szobeli">
+            <br>
+            <br>
+            <p>Összesen: 30 pont</p>
+            <input id="button" type="button" value="Számít" onclick="check()">
+          </form>
+          <br>
+          <br>
+          <b>
+          <p>Elért pontszám:</p>
+          <p id="eredmeny"></p>
+          <p>Érdemjegy:</p>
+          <p id="mennyi"></p>
+          </b>
+          </div>
+      </div>
+    
+      <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Készítette: Szanyi Levente</p>
+        </div>
+      </footer>
+    
+      <script src="pontozolap.js"></script>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+
 </body>
 </html>
