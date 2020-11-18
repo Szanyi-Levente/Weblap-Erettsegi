@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Számítógépes vírusok</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/pontozolap.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand">Érettségi tétel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Tétel</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="pontozolap.html">Pontozólap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1>A</h1>
+        <h1>Középszintű informatika érettségi - Pontozólap</h1>
+        <br>
+          <div class="col-md-5 lap">
+          <form id="pontozo" name="pontozo">
+            <b><p id="szo"> Írásbeli</p></b>
+            <p class="i">Hálózat: 40 pont</p> <input type="text" id="halozati" name="halozati">
+            <p class="i">Programozás: 40 pont</p> <input type="text" id="programozasi" name="programozasi" >
+            <p class="i">Weblap és Adatbázis: 40 pont</p> <input type="text" id="weblapi" name="weblapi">
+            <br><br>
+            <p>Összesen: 120 pont</p>
+            <br><br>
+            <b><p id="ir"> Szóbeli</p></b>
+            <input type="text" id="szobeli" name="szobeli">
+            <br>
+            <br>
+            <p>Összesen: 30 pont</p>
+            <input id="button" type="button" value="Számít" onclick="check()">
+          </form>
+          <br>
+          <br>
+          <b>
+          <p>Elért pontszám:</p>
+          <p id="eredmeny"></p>
+          <p>Érdemjegy:</p>
+          <p id="mennyi"></p>
+          </b>
+          </div>
+      </div>
+    
+      <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Készítette: Szanyi Levente</p>
+        </div>
+      </footer>
+    
+      <script src="pontozolap.js"></script>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>
